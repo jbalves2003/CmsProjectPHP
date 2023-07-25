@@ -14,10 +14,8 @@
 
                                 </tr>
                             </thead>
-
                             <tbody>
                 <?php 
-                                
                                 $query = "SELECT * FROM comments";
                                 $select_comments = mysqli_query($connection, $query);
                                 
@@ -48,6 +46,7 @@
                                     }
 
                                     */
+                                    
                                        echo "<td>$comment_email</td>";
                                        echo "<td>$comment_status</td>";
 
