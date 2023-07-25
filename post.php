@@ -96,6 +96,10 @@ $query .= "VALUES ($the_post_id ,'{$comment_author}', '{$comment_email}', '{$com
 
             }
 
+            $query = "UPDATE posts SET post_comment_count = post_comment_count + 1 ";
+            $query .= "WHERE post_id = $the_post_id";
+            $update_comment_count = mysqli_query($connection, $query);
+
 
         }
 
