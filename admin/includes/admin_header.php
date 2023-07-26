@@ -2,6 +2,18 @@
 <?php   include "functions.php"?>
 
 <?php ob_start(); ?>
+<?php session_start(); ?>
+
+<?php
+if(isset($SESSION['user_role'])){
+
+    header("Location: ../index.php");
+    
+    }
+
+
+
+?>
 
 
 <!DOCTYPE html>
