@@ -31,8 +31,7 @@ include "includes/navigation.php";
                 $post_content = substr($row['post_content'],0,100);
                 $post_status =  $row['post_status'];
 
-                if($post_status !== 'published' && $post_status !== 'Published'){
-                echo "<h1> No POST SORRY </h1>";
+                if($post_status == 'published' && $post_status == 'Published'){
 
                 }else{
 
